@@ -3,10 +3,18 @@
 <title>Artemis Website</title>
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
         .body {
             margin: 0px;
             font-family: 'inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
         }
         .pad {
             padding: 25px;
@@ -14,9 +22,28 @@
         .header {
             background-color: rgb(27, 110, 183);
             text-align: center;
-            color: black;
-            height: 150px;
+            color: white;
+            height: auto;
+            padding: 40px 20px;
             font-size: 36pt;
+            font-family: 'Audiowide', cursive !important;
+        }
+        .top-line {
+            font-family: 'Inter', sans-serif;
+            font-size: 18pt;
+            font-weight: 400;
+            line-height: 1.0;
+            margin-bottom: -5px;
+            font-size: 36pt;
+        }
+        .divider {
+            line-height: 1.0;
+            margin-bottom: -10px;
+        }
+        .artemis-title {
+            font-family: 'Audiowide', cursive;
+            font-size: 42pt;
+            line-height: 1.2;
         }
         .inner-header {
             background-color: rgb(27, 110, 183);
@@ -31,16 +58,17 @@
         .line_2 {
             background-color: rgb(200, 198, 196);
             color: black;
-            font-size: 26pt;
+            font-size: 20pt;
             text-align: center;
-            height: 45px;
             margin: 0px;
+            font-family: 'Inter', sans-serif !important;
+            font-weight: 700;
+            padding: 10px 0;
         }
         .main-text {
             width: 6%;
             left: 25px;
             top: 325px;
-
             background-color: rgb(9, 156, 156);
             border-radius: 5px;
             text-decoration: none;
@@ -83,6 +111,7 @@
             color: black;
             text-align: left;
             right: 60px;
+            font-size: 16pt;
         }
         .dropdown {
             display: inline-block;
@@ -92,8 +121,8 @@
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
-            top: 275px;
-            right: 35px;
+            top: 300px;
+            right: 20px;
         }
         .dropdown_button {
             background-color: #3498db;
@@ -132,13 +161,39 @@
             width: 60%;
             text-align: left;
         }
+        .background-info {
+            background-color: lightblue;
+            color: black;
+            text-align: left;
+            width: 60%;
+        }
+        .demo-image {
+            flex: 1;
+            text-align: right;
+        }
+        .content-wrapper {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+            padding: 20px;
+        }
+        .text-side {
+            flex: 2;
+        }
+        .main, .background-info {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <div class="header pad">Your personal AI<br>⎯⎯⎯⎯⎯⎯⎯<br>Artemis</div>
+    <div class="header pad">
+        <div class="top-line">Your Personal AI</div>
+        <div class="divider">⎯⎯⎯⎯⎯⎯⎯</div>
+        <div class="artemis-title">Artemis</div>
+    </div>
     <div>
         <p class="line_2">
-            An AI assistant
+            Artificial but Intelligent
         </p>
     </div>
     <div class="logo">
@@ -156,23 +211,30 @@
             <li><a href="Artemis.zip" download>Artemis v1.0.0</a></li>
         </ul>
     </div>
-    <!-- <div class="source_code">
-        <p>Background<br>
-        Artemis is a project that I have been working on in my free time, while also learning to program more complex projects. <br> 
-        Artemis is a Mac only application, while THOMAS is a similar project of mine that is a Windows only application.<br>
-        You may download, and use Artemis as you wish, but you are not allowed to attempt, or successfully, decode, decompile, or alter source code without explicit permission from me.<br>
-        Use of any API keys without explicit permission is also forbidden.<br><br>
-        Otherwise, enjoy Artemis!<br>
+    <div class="content-wrapper">
+        <div class="text-side">
+            <div class="main">
+                Artemis is an AI assistant that can control some aspects of your computer, while also being a helpful AI chatbot.<br>
+                Here you can download the latest public build of Artemis, and also visit the Github page, to view to source code.<br><br>
+                1. To use Artemis, choose a version from the dropdown box, and select it to download it.<br><br>
+                2. After your version is downloaded, double click the "Artemis.zip" and wait for the file to be extracted.<br><br>
+                3. Once the folder has been extracted, open it, and double click on the app icon with the Artemis logo. <br><br>
+                4. Now that Artemis has been downloaded, you're now good to use Artemis!<br><br><br>
+            </div>
+            <div class="background-info">
+                <p>Background<br>
+                Artemis is a project that I have been working on in my free time, while also learning to program more complex projects. <br> 
+                Artemis is a Mac only application, while THOMAS is a similar project of mine that is a Windows only application.<br>
+                You may download, and use Artemis as you wish, but you are not allowed to attempt, or successfully, decode, decompile, or alter source code without explicit permission from me.<br>
+                Use of any API keys without explicit permission is also forbidden.<br><br>
+                Otherwise, enjoy Artemis!<br>
                 --Daniel, the developer, upholder, and designer of the Artemis project.
-        </p>
-    </div> -->
-    <div class="main">
-        Artemis is an AI assistant that can control some aspects of your computer, while also being a helpful AI chatbot.<br>
-        Here you can download the latest public build of Artemis, and also visit the Github page, to view to source code.<br><br>
-        1. To use Artemis, choose a version from the dropdown box, and select it to download it.<br><br>
-        2. After your version is downloaded, double click the "Artemis.zip" and wait for the file to be extracted.<br><br>
-        3. Once the folder has been extracted, open it, and double click on the app icon with the Artemis logo. <br><br>
-        4. Now that Artemis has been downloaded, you're now good to use Artemis!
+                </p>
+            </div>
+        </div>
+            <div class="demo-image">
+                <img src="demo.png" alt="Demo" style="width: 100%; max-width: 500px;"/>
+            </div>
     </div>
 </body>
 </html>
