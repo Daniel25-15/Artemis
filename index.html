@@ -27,6 +27,7 @@
             padding: 40px 20px;
             font-size: 36pt;
             font-family: 'Audiowide', cursive !important;
+            margin-top: 80px;
         }
         .top-line {
             font-family: 'Inter', sans-serif;
@@ -121,7 +122,7 @@
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
-            top: 300px;
+            top: 380px;
             right: 20px;
         }
         .dropdown_button {
@@ -170,6 +171,8 @@
         .demo-image {
             flex: 1;
             text-align: right;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            border-radius: 5px;
         }
         .content-wrapper {
             display: flex;
@@ -251,7 +254,75 @@
             font-weight: 700;
             font-size: 26pt;
             text-decoration: none;
+            margin-bottom: 80px;
         }
+        .finder-wrapper {
+            position: fixed;
+            background-color: rgb(117, 114, 114, 0.5);
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            color: white;
+            font-size: 24pt;
+            width: 100%;
+            height: 80px;
+            border-radius: 10px;
+            top: 0px;
+            left: 0;
+            right: 0;
+            padding: 15px;
+            text-align: center;
+            border-top: 5px solid #000000;
+            border-bottom: 5px solid #000000;
+            /* mix-blend-mode: difference; */
+        }
+        .finder-go-to-project {
+            /* background-color: rgb(117, 114, 114, 0.5); */
+            color: black;
+            border-radius: 5px;
+            font-size: 24pt;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            margin: 10px;
+            text-decoration: none;
+            padding: 5px;
+        }
+        .finder-go-to-github {
+            /* background-color: rgb(117, 114, 114, 0.5); */
+            color: black;
+            border-radius: 5px;
+            font-size: 24pt;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            margin: 10px;
+            text-decoration: none;
+            padding: 5px;
+        }
+        .finder-go-to-link {
+            /* background-color: rgb(117, 114, 114, 0.5); */
+            color: black;
+            border-radius: 5px;
+            font-size: 24pt;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            margin: 10px;
+            text-decoration: none;
+            padding: 5px;
+        }
+        .other-images-line-1-wrapper {
+            width: 100%;
+            padding: 15px;
+            display: flex;
+            gap: 30px;
+        }
+        .other-images-line-1-wrapper a {
+            flex: 0 0 200px;
+        }
+        .other-images-line-1-wrapper img {
+            width: 300px;
+            height: auto;
+        }
+        .other-information-text {
+            width: 45%;
+            flex: 1;
+        }
+        /* fuck that ai that kept giving me bs the one time i ask an ai to help me with something :( */
+
     </style>
 </head>
 <body>
@@ -301,5 +372,10 @@
             </div>
     </div>
     <a href="other_projects.html" class="link-to-page-2">Other Projects</a>
+    <div class="finder-wrapper">
+        <a href="other_projects.html" class="finder-go-to-project">Other Projects</a>
+        <a href="https://github.com/Daniel25-15/Artemis" class="finder-go-to-github">Website GitHub</a>
+        <a href="https://github.com/Daniel25-15/Artemis-AI" class="finder-go-to-github">Source Code</a>
+    </div>
 </body>
 </html>
